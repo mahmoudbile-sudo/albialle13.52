@@ -16,11 +16,12 @@
   .ok { color:#7fd0a0; } .bad { color:#d08a7f; } .warn { color:#d8c07f; }
   #brand { text-align:center; padding:8px 10px; background:#0e1116;
            border-bottom:1px solid #1e2732; }
-  #brand img { content:url("el-bely-logo.png"); width:64px; height:64px; object-fit:contain;
-               margin-left:8px; border-radius:50%; vertical-align:middle; }
-  #brand b { font-size:0; vertical-align:middle; }
-  #brand b::after { content:"البيلى لتعديل البلايستيشن — \200E 0570863556"; font:700 15px/1.45 Tahoma, "Segoe UI", sans-serif;
-                    color:#e6ebf2; }
+  #brand img, #brand b { display:none; }
+  #brand::after { content:"ب"; display:inline-grid; place-items:center; width:28px; height:28px;
+                  margin-left:8px; border-radius:50%; background:#1677ff; color:#fff;
+                  font:bold 20px/1 Tahoma, "Segoe UI", sans-serif; vertical-align:middle; }
+  #brand::before { content:"البيلى لتعديل البلايستيشن"; font:700 15px/1.45 Tahoma, "Segoe UI", sans-serif;
+                   color:#e6ebf2; vertical-align:middle; }
 </style>
 </head>
 <body>

@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en" manifest="cache.appcache">
+<html lang="ar" dir="rtl" manifest="cache.appcache">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>RAW GAME</title>
+    <title>البيلى لتعديل البلايستيشن</title>
     <style>
       html,
       body {
@@ -24,16 +24,27 @@
         border-bottom: 1px solid #1e2732;
       }
       #brand img {
-        width: 28px;
-        height: 28px;
-        margin-right: 8px;
-        border-radius: 50%;
-        vertical-align: middle;
+        display: none;
       }
       #brand b {
-        font-size: 15px;
-        font-weight: 700;
-        letter-spacing: 0.14em;
+        display: none;
+      }
+      #brand::after {
+        content: "ب";
+        display: inline-grid;
+        place-items: center;
+        width: 28px;
+        height: 28px;
+        margin-left: 8px;
+        border-radius: 50%;
+        background: #1677ff;
+        color: #fff;
+        font: bold 20px/1 Tahoma, "Segoe UI", sans-serif;
+        vertical-align: middle;
+      }
+      #brand::before {
+        content: "البيلى لتعديل البلايستيشن";
+        font: 700 15px/1.45 Tahoma, "Segoe UI", sans-serif;
         color: #e6ebf2;
         vertical-align: middle;
       }
